@@ -18,6 +18,8 @@ btnrow3.pack(expand=True ,fill = "both")
 btnrow4=Frame(window)
 btnrow4.pack(expand=True ,fill = "both")
 
+btn1=Button(btnrow1,text="1",font=("verdana",22),)
+btn1.pack(side=LEFT,expand=True,fill="both")
 
 
 window.mainloop()
