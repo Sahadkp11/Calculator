@@ -29,23 +29,23 @@ btn1=Button(btnrow1,
             )
 btn1.pack(side=LEFT,expand=True,fill="both",)
 
-btn2=Button(btnrow2,
+btn2=Button(btnrow1,
             text="2",
             font=("verdana",22),
             )
 btn2.pack(side=LEFT,expand=True,fill="both",)
 
-btn3=Button(btnrow3
+btn3=Button(btnrow1
             ,text="3",
             font=("verdana",22),
             )
 btn3.pack(side=LEFT,expand=True,fill="both",)
 
-btn4=Button(btnrow4,
+btn4=Button(btnrow1,
             text="4",
             font=("verdana",22),
             )
-btn4.pack(side=LEFT,expand=True,fill="both",)
+btn4.pack(side=LEFT,expand= True,fill="both",)
 
 window.mainloop()
 
