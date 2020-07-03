@@ -8,6 +8,7 @@ window.title("Calculator")
 Lbl=Label(
     window,text="Label"
     ,anchor= SE,
+    font=("verdana",22)
 )
 Lbl.pack(expand=True,fill="both",)
 
@@ -46,6 +47,97 @@ btn4=Button(btnrow1,
             font=("verdana",22),
             )
 btn4.pack(side=LEFT,expand= True,fill="both",)
+
+
+
+
+
+
+btn1=Button(btnrow2,
+            text="1",
+            font=("verdana",22),
+            )
+btn1.pack(side=LEFT,expand=True,fill="both",)
+
+btn2=Button(btnrow2,
+            text="2",
+            font=("verdana",22),
+            )
+btn2.pack(side=LEFT,expand=True,fill="both",)
+
+btn3=Button(btnrow2,
+            text="3",
+            font=("verdana",22),
+            )
+btn3.pack(side=LEFT,expand=True,fill="both",)
+
+btn4=Button(btnrow2,
+            text="4",
+            font=("verdana",22),
+            )
+btn4.pack(side=LEFT,expand= True,fill="both",)
+
+
+
+
+
+
+btn1=Button(btnrow3,
+            text="1",
+            font=("verdana",22),
+            )
+btn1.pack(side=LEFT,expand=True,fill="both",)
+
+btn2=Button(btnrow3,
+            text="2",
+            font=("verdana",22),
+            )
+btn2.pack(side=LEFT,expand=True,fill="both",)
+
+btn3=Button(btnrow3
+            ,text="3",
+            font=("verdana",22),
+            )
+btn3.pack(side=LEFT,expand=True,fill="both",)
+
+btn4=Button(btnrow3,
+            text="4",
+            font=("verdana",22),
+            )
+btn4.pack(side=LEFT,expand= True,fill="both",)
+
+
+
+
+
+
+
+
+btn1=Button(btnrow4,
+            text="1",
+            font=("verdana",22),
+            )
+btn1.pack(side=LEFT,expand=True,fill="both",)
+
+btn2=Button(btnrow4,
+            text="2",
+            font=("verdana",22),
+            )
+btn2.pack(side=LEFT,expand=True,fill="both",)
+
+btn3=Button(btnrow4
+            ,text="3",
+            font=("verdana",22),
+            )
+btn3.pack(side=LEFT,expand=True,fill="both",)
+
+btn4=Button(btnrow4,
+            text="4",
+            font=("verdana",22),
+            )
+btn4.pack(side=LEFT,expand= True,fill="both",)
+
+
 
 window.mainloop()
 
