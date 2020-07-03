@@ -6,8 +6,14 @@ window.resizable(0,0)
 window.title("Calculator")
 
 
+btnrow1 =Frame(window,bg  ="#000000")
+btnrow1.pack(expand=True,fill = "both")
+
+btnrow2=Frame(window)
+btnrow2.pack(expand=True ,fill = "both")
+
+
+
 window.mainloop()
-
-
 
 
