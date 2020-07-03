@@ -25,26 +25,34 @@ btnrow4=Frame(window)
 btnrow4.pack(expand=True ,fill = "both",)
 
 btn1=Button(btnrow1,
-            text="1",
+            text="7",
             font=("verdana",22),
+            relief=GROOVE,
+            border=0,
             )
 btn1.pack(side=LEFT,expand=True,fill="both",)
 
 btn2=Button(btnrow1,
-            text="2",
+            text="8",
             font=("verdana",22),
+            relief=GROOVE,
+            border=0,
             )
 btn2.pack(side=LEFT,expand=True,fill="both",)
 
 btn3=Button(btnrow1
-            ,text="3",
+            ,text="9",
             font=("verdana",22),
+            relief=GROOVE,
+            border=0,
             )
 btn3.pack(side=LEFT,expand=True,fill="both",)
 
 btn4=Button(btnrow1,
-            text="4",
+            text="+",
             font=("verdana",22),
+            relief=GROOVE,
+            border=0,
             )
 btn4.pack(side=LEFT,expand= True,fill="both",)
 
@@ -54,26 +62,35 @@ btn4.pack(side=LEFT,expand= True,fill="both",)
 
 
 btn1=Button(btnrow2,
-            text="1",
+            text="4",
             font=("verdana",22),
+            relief=GROOVE,
+            border=0,
             )
 btn1.pack(side=LEFT,expand=True,fill="both",)
 
 btn2=Button(btnrow2,
-            text="2",
+            text="5",
             font=("verdana",22),
+            relief=GROOVE,
+            border=0,
             )
 btn2.pack(side=LEFT,expand=True,fill="both",)
 
 btn3=Button(btnrow2,
-            text="3",
-            font=("verdana",22),
+            text="6",
+            font=("verdana",22),relief=GROOVE,
+            border=0,
             )
-btn3.pack(side=LEFT,expand=True,fill="both",)
+btn3.pack(side=LEFT,expand=True,
+          fill="both",)
 
 btn4=Button(btnrow2,
-            text="4",
+            text="-",
             font=("verdana",22),
+            relief=GROOVE,
+
+            border=0,
             )
 btn4.pack(side=LEFT,expand= True,fill="both",)
 
@@ -85,24 +102,32 @@ btn4.pack(side=LEFT,expand= True,fill="both",)
 btn1=Button(btnrow3,
             text="1",
             font=("verdana",22),
+            relief=GROOVE,
+            border=0,
             )
 btn1.pack(side=LEFT,expand=True,fill="both",)
 
 btn2=Button(btnrow3,
             text="2",
             font=("verdana",22),
+            relief=GROOVE,
+            border=0,
             )
 btn2.pack(side=LEFT,expand=True,fill="both",)
 
 btn3=Button(btnrow3
             ,text="3",
             font=("verdana",22),
+            relief=GROOVE,
+            border=0,
             )
 btn3.pack(side=LEFT,expand=True,fill="both",)
 
 btn4=Button(btnrow3,
-            text="4",
+            text="x",
             font=("verdana",22),
+            relief=GROOVE,
+            border=0,
             )
 btn4.pack(side=LEFT,expand= True,fill="both",)
 
@@ -114,26 +139,34 @@ btn4.pack(side=LEFT,expand= True,fill="both",)
 
 
 btn1=Button(btnrow4,
-            text="1",
+            text="C",
             font=("verdana",22),
+            relief=GROOVE,
+            border=0,
             )
 btn1.pack(side=LEFT,expand=True,fill="both",)
 
 btn2=Button(btnrow4,
-            text="2",
+            text="0",
             font=("verdana",22),
+            relief=GROOVE,
+            border=0,
             )
 btn2.pack(side=LEFT,expand=True,fill="both",)
 
 btn3=Button(btnrow4
-            ,text="3",
+            ,text="=",
             font=("verdana",22),
+            relief=GROOVE,
+            border=0,
             )
 btn3.pack(side=LEFT,expand=True,fill="both",)
 
 btn4=Button(btnrow4,
-            text="4",
+            text="/",
             font=("verdana",22),
+            relief=GROOVE,
+            border=0,
             )
 btn4.pack(side=LEFT,expand= True,fill="both",)
 
