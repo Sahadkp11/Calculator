@@ -1,7 +1,8 @@
 from tkinter import *
 
 val = ""
-
+A = 0
+operator = ""
 
 def btn_1_isclicked():
     global val
@@ -45,6 +46,63 @@ def btn_9_isclicked():
     global val
     val = val + "9"
     data.set(val)
+
+def btn_0_isclicked():
+    global val
+    val= val + "0"
+    data.set(val)
+
+
+
+
+
+
+def btn_plus_clicked():
+    global A
+    global operator
+    global val
+    A = int(val)
+    operator= "+"
+    val= val + "+"
+    data.set(val)
+def btn_negative_clicked():
+    global A
+    global operator
+    global val
+    A = int(val)
+    operator= "-"
+    val= val + "-"
+    data.set(val)
+
+def btn_div_clicked():
+    global A
+    global operator
+    global val
+    A = int(val)
+    operator= "/"
+    val= val + "/"
+    data.set(val)
+def btn_multi_clicked():
+    global A
+    global operator
+    global val
+    A = int(val)
+    operator= "*"
+    val= val + "*"
+    data.set(val)
+
+
+def c_pressed():
+    global A
+    global operator
+    global val
+    A=0
+    operator=""
+    val=""
+    data.set(val)
+
+
+
 
 
 
@@ -107,6 +165,7 @@ btn4=Button(btnrow1,
             font=("verdana",22),
             relief=GROOVE,
             border=0,
+            command=btn_plus_clicked,
             )
 btn4.pack(side=LEFT,expand= True,fill="both",)
 
@@ -147,6 +206,7 @@ btn4=Button(btnrow2,
             font=("verdana",22),
             relief=GROOVE,
             border=0,
+            command=btn_negative_clicked,
             )
 btn4.pack(side=LEFT,expand= True,fill="both",)
 
@@ -180,10 +240,11 @@ btn3=Button(btnrow3
 btn3.pack(side=LEFT,expand=True,fill="both",)
 
 btn4=Button(btnrow3,
-            text="x",
+            text="X",
             font=("verdana",22),
             relief=GROOVE,
             border=0,
+            command=btn_multi_clicked,
             )
 btn4.pack(side=LEFT,expand= True,fill="both",)
 
@@ -198,7 +259,7 @@ btn1=Button(btnrow4,
             text="C",
             font=("verdana",22),
             relief=GROOVE,
-            border=0,
+            border=0,command=c_pressed,
             )
 btn1.pack(side=LEFT,expand=True,fill="both",)
 
@@ -206,7 +267,7 @@ btn2=Button(btnrow4,
             text="0",
             font=("verdana",22),
             relief=GROOVE,
-            border=0,
+            border=0,command=btn_0_isclicked,
             )
 btn2.pack(side=LEFT,expand=True,fill="both",)
 
@@ -223,6 +284,7 @@ btn4=Button(btnrow4,
             font=("verdana",22),
             relief=GROOVE,
             border=0,
+            command=btn_div_clicked,
             )
 btn4.pack(side=LEFT,expand= True,fill="both",)
 
