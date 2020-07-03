@@ -12,6 +12,12 @@ btnrow1.pack(expand=True,fill = "both")
 btnrow2=Frame(window)
 btnrow2.pack(expand=True ,fill = "both")
 
+btnrow3=Frame(window)
+btnrow3.pack(expand=True ,fill = "both")
+
+btnrow4=Frame(window)
+btnrow4.pack(expand=True ,fill = "both")
+
 
 
 window.mainloop()
