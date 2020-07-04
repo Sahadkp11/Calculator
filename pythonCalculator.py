@@ -116,7 +116,12 @@ def result():
             c = A - x
             data.set(c)
             val = str(c)
-    
+    elif operator == "/"
+            x = int((val2.split("/")[1]))
+            c = A / x
+            data.set(c)
+            val = str(c)
+
 
 
 
