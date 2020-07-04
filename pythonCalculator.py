@@ -135,15 +135,9 @@ def result():
         val = str(c)
 
 
-
-
-
-
-
-
 window=Tk()
 window.geometry("250x400+300+300")
-window.resizable(0,0)
+
 window.title("Calculator")
 
 data =StringVar()
@@ -169,29 +163,29 @@ btnrow4=Frame(window)
 btnrow4.pack(expand=True ,fill = "both",)
 
 btn1=Button(btnrow1,
-            text="1",
+            text="7",
             font=("verdana",22),
             relief=GROOVE,
             border=0,
-            command=btn_1_isclicked,
+            command=btn_7_isclicked,fg="red"
             )
 btn1.pack(side=LEFT,expand=True,fill="both",)
 
 btn2=Button(btnrow1,
-            text="2",
+            text="8",
             font=("verdana",22),
             relief=GROOVE,
             border=0,
-            command=btn_2_isclicked,
+            command=btn_8_isclicked,fg="red"
             )
 btn2.pack(side=LEFT,expand=True,fill="both",)
 
 btn3=Button(btnrow1
-            ,text="3",
+            ,text="9",
             font=("verdana",22),
             relief=GROOVE,
             border=0,
-            command=btn_3_isclicked,
+            command=btn_9_isclicked, fg="red"
             )
 btn3.pack(side=LEFT,expand=True,fill="both",)
 
@@ -214,7 +208,7 @@ btn1=Button(btnrow2,
             font=("verdana",22),
             relief=GROOVE,
             border=0,
-            command=btn_4_isclicked,
+            command=btn_4_isclicked, fg="red"
             )
 btn1.pack(side=LEFT,expand=True,fill="both",)
 
@@ -223,7 +217,7 @@ btn2=Button(btnrow2,
             font=("verdana",22),
             relief=GROOVE,
             border=0,
-            command=btn_5_isclicked,
+            command=btn_5_isclicked, fg="red"
             )
 btn2.pack(side=LEFT,expand=True,fill="both",)
 
@@ -231,7 +225,7 @@ btn3=Button(btnrow2,
             text="6",
             font=("verdana",22),relief=GROOVE,
             border=0,
-            command=btn_6_isclicked,
+            command=btn_6_isclicked, fg="red"
             )
 btn3.pack(side=LEFT,expand=True,
           fill="both",)
@@ -251,26 +245,27 @@ btn4.pack(side=LEFT,expand= True,fill="both",)
 
 
 btn1=Button(btnrow3,
-            text="7",
+            text="1",
             font=("verdana",22),
             relief=GROOVE,
-            border=0,command=btn_7_isclicked,
+            border=0,command=btn_1_isclicked, fg="red"
             )
 btn1.pack(side=LEFT,expand=True,fill="both",)
 
 btn2=Button(btnrow3,
-            text="8",
+            text="2",
             font=("verdana",22),
             relief=GROOVE,
-            border=0,command=btn_8_isclicked,
+            border=0,command=btn_2_isclicked, fg="red"
             )
 btn2.pack(side=LEFT,expand=True,fill="both",)
 
 btn3=Button(btnrow3
-            ,text="9",
+            ,text="3",
             font=("verdana",22),
             relief=GROOVE,
-            border=0,command=btn_9_isclicked,
+            border=0,
+            command=btn_3_isclicked, fg="red"
             )
 btn3.pack(side=LEFT,expand=True,fill="both",)
 
@@ -294,7 +289,7 @@ btn1=Button(btnrow4,
             text="C",
             font=("verdana",22),
             relief=GROOVE,
-            border=0,command=c_pressed,
+            border=0,command=c_pressed,fg="orange"
             )
 btn1.pack(side=LEFT,expand=True,fill="both",)
 
@@ -302,7 +297,8 @@ btn2=Button(btnrow4,
             text="0",
             font=("verdana",22),
             relief=GROOVE,
-            border=0,command=btn_0_isclicked,
+            border=0,
+            command=btn_0_isclicked,fg="red"
             )
 btn2.pack(side=LEFT,expand=True,fill="both",)
 
@@ -310,7 +306,7 @@ btn3=Button(btnrow4
             ,text="=",
             font=("verdana",22),
             relief=GROOVE,
-            border=0,command=result,
+            border=0,command=result,fg="orange"
             )
 btn3.pack(side=LEFT,expand=True,fill="both",)
 
@@ -326,5 +322,3 @@ btn4.pack(side=LEFT,expand= True,fill="both",)
 
 
 window.mainloop()
-
-
