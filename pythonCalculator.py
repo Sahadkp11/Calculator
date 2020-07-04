@@ -101,6 +101,15 @@ def c_pressed():
     val=""
     data.set(val)
 
+def result():
+    global A
+    global operator
+    global val
+    val2 = val
+    if operator =="+":
+        x= int((val2.split("+")[1]))
+        c =A+x
+        data.set(c)
 
 
 
@@ -275,7 +284,7 @@ btn3=Button(btnrow4
             ,text="=",
             font=("verdana",22),
             relief=GROOVE,
-            border=0,
+            border=0,command=result,
             )
 btn3.pack(side=LEFT,expand=True,fill="both",)
 
