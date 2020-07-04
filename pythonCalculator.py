@@ -1,5 +1,5 @@
 from tkinter import *
-
+from tkinter import messagebox
 val = ""
 A = 0
 operator = ""
@@ -118,9 +118,16 @@ def result():
             val = str(c)
     elif operator == "/":
             x = int((val2.split("/")[1]))
-            c = A / x
-            data.set(c)
-            val = str(c)
+            if x ==0:
+                messagebox.showerror("Error","DIVISION BY ZERO NOT SUPPORTED")
+                A=""
+                val = ""
+                data.set(val)
+            else:
+                c =int(A/x)
+                data.set(c)
+                val=str(c)
+
     elif operator == "*":
         x = int((val2.split("*")[1]))
         c = A * x
